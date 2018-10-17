@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Notif">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="362dp"
+
+        android:layout_height="490dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="346dp"
+            android:layout_height="77dp"
+            android:text="  notification"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            android:scrollIndicators="right"
+            android:scrollbarSize="60dp"
+            tools:layout_editor_absoluteX="276dp"
+            tools:layout_editor_absoluteY="25dp"
+            />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="45dp"
+            android:text="Set Date:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24dp"
+            android:textStyle="bold"
+
+
+            />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="353dp"
+            android:layout_height="57dp"
+            android:layout_margin="20dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="date"
+
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="45dp"
+            android:layout_margin="20dp"
+            android:text="Snooze:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="328dp"
+            android:layout_height="67dp"
+            android:layout_margin="20dp"
+            android:ems="10"
+            android:inputType="time" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="Save"
+            />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View List"
+
+            android:background="@color/colorPrimaryDark"/>
+
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
